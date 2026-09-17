@@ -1,0 +1,12 @@
+name = "cloudip"
+main = "worker.js"
+compatibility_date = "2026-01-20"
+workers_dev = true
+
+[[d1_databases]]
+binding = "IOT_DB"
+database_name = "cloudip"
+database_id = "REPLACE_AFTER_AUTOMATED_INSTALLER"
+
+[triggers]
+crons = ["*/15 * * * *"]
